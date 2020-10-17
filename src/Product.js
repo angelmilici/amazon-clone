@@ -28,6 +28,7 @@ function Product({ id, title, image, price, rating }) {
                     <strong>{price}</strong>
                 </p>
                 <div className="product__rating" >
+                    {/* creates an array of n stars, filled with an empty value, and map through it n times */}
                     {Array(rating)
                         .fill()
                         .map((_, i) => (

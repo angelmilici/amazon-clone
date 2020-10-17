@@ -18,8 +18,10 @@ function Checkout() {
                     alt=""
                 />
                 {basket?.length === 0 ? (
+                    // if basket empty, do the following
                     <div>
-                        <h2>Your Basket is empty! Please add items to checkout!</h2>
+                        <h2>Your Basket is empty</h2>
+                        <p>You have no items in your basket. To buy one or more items, click "Add to basket" next to the item</p>
                     </div>
                 ) : (
 
@@ -27,6 +29,7 @@ function Checkout() {
                         <h3>Hello, {!user? 'Guest': user.email}</h3>
                         <h2 className="checkout__title">Your shopping basket</h2>
 
+                        {/* List out all the Checkout products */}
                         {basket.map(item => (
                             <CheckoutProduct
                                 id={item.id}

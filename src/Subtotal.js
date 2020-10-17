@@ -10,6 +10,7 @@ function Subtotal() {
     return (
         <div className="subtotal">
             {/* Price */}
+            {/* component that formats pricing to be in the correct standard */}
             <CurrencyFormat
                 renderText={(value) => (
                     <div>

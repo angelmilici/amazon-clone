@@ -37,6 +37,8 @@ function App() {
 
 	return (
 		// BEM
+		// Router powers up children -> gives additional props & features etc (wraps up everything)
+		// Route determines what is going to load at each page url
 		<Router>
 			<div className="app">
 				<Switch>
