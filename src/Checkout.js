@@ -1,8 +1,6 @@
-import userEvent from "@testing-library/user-event";
 import React from "react";
 import "./Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
-import { getBasketTotal } from "./reducer";
 import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
 
@@ -14,7 +12,7 @@ function Checkout() {
             <div className="checkout__left">
                 <img 
                     className="checkout__ad"
-                    src="https://images-na.ssl-images-amazon.com/images/G/01/credit/img16/CCMP/newstorefront/YACC-desktop-nonprime-banner2.jpg" 
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Coupons/infographic/1500x300._CB1198675309_.jpg" 
                     alt=""
                 />
                 {basket?.length === 0 ? (
